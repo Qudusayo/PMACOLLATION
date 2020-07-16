@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("./Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: #c8e9fc;
+}
+
+.card {
+  font-family: "NotoSans", sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 1% auto;
+  max-width: 37em;
+
+  p {
+    font-weight: 200;
+    font-size: 0.9em;
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 1em auto;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #b9b9b980;
+  }
+
+  select {
+    height: 3.5em;
+    width: 12em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 0.9em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+    background-position-y: 12px;
+    border: 1px solid #b9b9b9b2;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 2rem;
+    padding: 1rem;
+    padding-right: 2rem;
+  }
+
+  .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 0.8em;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    &:hover input ~ .checkmark {
+      box-shadow: 1px 1px 15px rgb(17, 143, 137);
+    }
+
+    input:checked ~ .checkmark {
+      background-color: #ffffff;
+      border: 2px solid rgb(17, 143, 137);
+    }
+
+    .checkmark:after {
+      top: 2px;
+      left: 2.3px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgb(17, 143, 137);
+    }
+  }
+
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid rgb(150, 150, 150);
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+}
+
+.intro {
+  margin-top: 0.8em;
+  border-top: 10px solid rgb(17, 143, 137);
+  padding-top: 0.5em;
+
+  h1 {
+    font-weight: 400;
+    margin: 0;
+  }
+
+  p,
+  ol {
+    font-size: 0.9rem;
+  }
+
+  ol {
+    padding-inline-start: 1em;
+
+    li {
+      margin: 1.5em 0;
+    }
+  }
+}
+
+.red {
+  color: rgb(204, 3, 3);
+  font-size: smaller;
+}

@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("./Noto_Sans/NotoSans-Regular.ttf") format("truetype");
+}
+
+body {
+  background-color: #c8e9fc;
+}
+
+.card {
+  font-family: "NotoSans", sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin: 1% auto;
+  max-width: 37em;
+  /* Create a custom radio button */
+  /* Show the indicator (dot/circle) when checked */
+}
+
+.card p {
+  font-weight: 200;
+  font-size: 0.9em;
+  margin-top: 0;
+}
+
+.card img {
+  max-width: 100%;
+  margin: 1em auto;
+}
+
+.card input[type="text"],
+.card input[type="email"],
+.card input[type="tel"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #b9b9b980;
+}
+
+.card select {
+  height: 3.5em;
+  width: 12em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 0.9em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='grey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 90%;
+  background-position-y: 12px;
+  border: 1px solid #b9b9b9b2;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 2rem;
+  padding: 1rem;
+  padding-right: 2rem;
+}
+
+.card .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 0.8em;
+}
+
+.card .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.card .container:hover input ~ .checkmark {
+  -webkit-box-shadow: 1px 1px 15px #118f89;
+          box-shadow: 1px 1px 15px #118f89;
+}
+
+.card .container input:checked ~ .checkmark {
+  background-color: #ffffff;
+  border: 2px solid #118f89;
+}
+
+.card .container .checkmark:after {
+  top: 2px;
+  left: 2.3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #118f89;
+}
+
+.card .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #969696;
+}
+
+.card .checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.card .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.intro {
+  margin-top: 0.8em;
+  border-top: 10px solid #118f89;
+  padding-top: 0.5em;
+}
+
+.intro h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.intro p,
+.intro ol {
+  font-size: 0.9rem;
+}
+
+.intro ol {
+  -webkit-padding-start: 1em;
+          padding-inline-start: 1em;
+}
+
+.intro ol li {
+  margin: 1.5em 0;
+}
+
+.red {
+  color: #cc0303;
+  font-size: smaller;
+}
