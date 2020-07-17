@@ -1,5 +1,10 @@
 document.querySelector("#form").addEventListener("submit", (e) => {
   e.preventDefault();
+  const btn = document.querySelector('#submit');
+  btn.innerText = 'Submitting ......'
+  btn.setAttribute('disabled', true);
+  btn.style.cursor = "not-allowed";
+  
   let info = {
     email: document.querySelector('input[name="email"]').value,
     name: document.querySelector('input[name="name"]').value,
