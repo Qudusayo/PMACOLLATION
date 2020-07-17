@@ -14,14 +14,13 @@ body {
   padding: 1.5em;
   margin: 1% auto;
   max-width: 37em;
-  /* Create a custom radio button */
-  /* Show the indicator (dot/circle) when checked */
 }
 
 .card p {
   font-weight: 200;
   font-size: 0.9em;
   margin-top: 0;
+  margin-bottom: 2em;
 }
 
 .card img {
@@ -35,6 +34,10 @@ body {
   border: none;
   outline: none;
   border-bottom: 1px solid #b9b9b980;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+  font-size: 1em;
+  font-family: "NotoSans", sans-serif;
 }
 
 .card select {
@@ -117,6 +120,51 @@ body {
   display: block;
 }
 
+button {
+  display: block;
+  margin: 1em auto 5em;
+  border: none;
+  outline: none;
+  width: 48em;
+  background-color: #118f89;
+  height: 35px;
+  border-radius: 7px;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ededed;
+  font-family: "NotoSans", sans-serif;
+  letter-spacing: 0.3em;
+  -webkit-box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 4px 3px rgba(0, 0, 0, 0.4);
+}
+
+.confirm label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.confirm label span {
+  padding-left: 1em;
+  font-size: small;
+  color: red;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: small;
+  font-family: "NotoSans", sans-serif;
+}
+
+footer span {
+  display: block;
+}
+
 .intro {
   margin-top: 0.8em;
   border-top: 10px solid #118f89;
@@ -145,4 +193,27 @@ body {
 .red {
   color: #cc0303;
   font-size: smaller;
+}
+
+@media screen and (min-width: 768px) {
+  .card input[type="text"],
+  .card input[type="email"],
+  .card input[type="tel"] {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card input[type="text"],
+  .card input[type="email"],
+  .card input[type="tel"] {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 42em) {
+  button {
+    width: 100%;
+    margin: 1% auto 5em;
+  }
 }

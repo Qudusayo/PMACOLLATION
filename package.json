@@ -1,0 +1,17 @@
+{
+  "name": "pmacollation",
+  "version": "1.0.0",
+  "description": "School of Science Pade Muslim Alumni collatiion form",
+  "main": "index.js",
+  "scripts": {
+    "lambda-serve": "netlify-lambda serve functions",
+    "lambda-build": "netlify-lambda build functions"
+  },
+  "author": "Qudusayo",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "netlify-lambda": "^2.0.0",
+    "nodemailer": "^6.4.10"
+  }
+}
